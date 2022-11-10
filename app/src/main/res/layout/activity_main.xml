@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+     >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+
+
+        >
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/welcome_to_my_first_project"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+
+            />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:hint="@string/user_name"
+            android:importantForAutofill="no"
+            android:textColor="@color/white"
+            android:textColorHint="#7A7979"/>
+
+
+
+        <RadioGroup
+            android:id="@+id/sexGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:text="Male"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:text="@string/female"
+                style="@style/radioButton"/>
+
+                ></RadioGroup>
+
+        <Switch
+            android:id="@+id/sw"
+            style="@style/radioButton"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="click"/>
+
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/departments"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="#786060"
+            android:text="@string/submit" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

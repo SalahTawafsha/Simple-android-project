@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">First App</string>
+    <string name="submit">Submit</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="user_name">User Name</string>
+    <string name="welcome_to_my_first_project">Welcome To My first Project</string>
+    <string name="female">Female</string>
+    <string-array name="departments">
+        <item>Computer Science</item>
+        <item>Computer Engineering</item>
+    </string-array>
+</resources>
