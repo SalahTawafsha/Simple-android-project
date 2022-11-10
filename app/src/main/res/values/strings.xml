@@ -5,6 +5,7 @@
     <string name="user_name">User Name</string>
     <string name="welcome_to_my_first_project">Welcome To My first Project</string>
     <string name="female">Female</string>
+    <string name="last_year">Last year</string>
     <string-array name="departments">
         <item>Computer Science</item>
         <item>Computer Engineering</item>

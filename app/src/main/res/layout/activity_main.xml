@@ -54,27 +54,35 @@
 
             <RadioButton
                 android:id="@+id/male"
+                style="@style/radioButton"
+                android:minHeight="48dp"
+
                 android:text="Male"
-                style="@style/radioButton" />
+                android:textColor="@color/white" />
 
             <RadioButton
                 android:id="@+id/female"
+                style="@style/radioButton"
+                android:minHeight="48dp"
                 android:text="@string/female"
-                style="@style/radioButton"/>
+                android:textColor="@color/white" />
 
                 ></RadioGroup>
 
         <Switch
+            android:textColor="@color/white"
             android:id="@+id/sw"
             style="@style/radioButton"
-            tools:ignore="UseSwitchCompatOrMaterialXml"
-            android:text="click"/>
+            android:layout_gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/last_year"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Spinner
             android:id="@+id/sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/departments"/>
+            style="@style/style"
+            android:entries="@array/departments"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/submit"
@@ -87,9 +95,7 @@
 
         <TextView
             android:id="@+id/result"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF" />
+            style="@style/style" />
 
     </LinearLayout>
 

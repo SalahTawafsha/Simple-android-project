@@ -2,6 +2,7 @@ package com.example.firsttest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView result;
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +37,14 @@ public class MainActivity extends AppCompatActivity {
         implement();
 
         submit.setOnClickListener(e -> {
-                    selected = findViewById(sexGroup.getCheckedRadioButtonId());
-                    String s = "";
+                    String s = name.getText().toString();
+                    int id = sexGroup.getCheckedRadioButtonId();
+                    if (id != -1) {
+                        selected = findViewById(id);
+                        s += "\n" + selected.getText();
+                    }
                     if (sw.isChecked())
-                        s = name.getText() + "\n" + selected.getText() + "\n" + sw.getText();
-                    else
-                        s = name.getText() + "\n" + selected.getText();
+                        s += "\n" + "congratulations, it's your last year !";
 
                     result.setText(s + "\n" + sp.getSelectedItem().toString());
 
